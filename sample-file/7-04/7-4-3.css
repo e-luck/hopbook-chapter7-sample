@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+h1 {
+	counter-increment: part;
+	counter-reset: chapter;
+}
+
+h1:before {
+	content: counter(part) "\0090e8 \003000";
+}
+
+h2 {
+	counter-increment: chapter;
+	counter-reset: section;
+}
+
+h2:before {
+	content: counter(part) "." counter(chapter) "\007ae0\003000";
+}
+
+h3 {
+	counter-increment: section;
+}
+
+h3:before {
+	content: counter(part) "." counter(chapter) "."
+	counter(section) "\007bc0 \003000";
+}

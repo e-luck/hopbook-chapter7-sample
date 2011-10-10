@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;  /* 全ての要素をリセット */
+	padding: 0;  /* 全ての要素をリセット */
+	line-height: 1.6;
+	border: none;
+}
+
+body {
+	padding: 40px;
+	font-size: 100%;
+	font-family: Verdana, Arial, sans-serif;
+	background-color: #f3f3f3;
+}
+
+.article {
+	margin: 0 auto;
+	padding: 10px 0;
+	width: 920px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+	margin: 0 40px;
+}
+
+.content div {
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: #87cefa;
+	border: 2px solid #1e90ff;
+}
+
+h1, h2 {
+	margin-bottom: 0.5em;
+	font-size: 100%;
+	color: #555;
+}
+
+em {
+	font-style: normal;
+	font-weight: bold;
+	color: #333;
+}
+
+h1 {
+	margin: -10px 0 20px;
+	padding-left: 40px;
+	height: 100px;
+	line-height: 100px;
+	background-color: #333;
+	color: #fd357b;
+	font-size: 150%;
+}
+
+/* (1)バージョン6以下のIEにのみ適用 */
+* html body .ie6 {
+	background-color: #ffb6c1;
+	border-color: #b03060;
+}
+
+/* (2)バージョン7のIEにのみ適用 */
+*:first-child+html .ie7 {
+	background-color: #ffb6c1;
+	border-color: #b03060;
+}
+
+/* (3)バージョン6と7のIEにのみ適用 */
+*:first-child+html .ie6_ie7 {
+	background-color: #ffb6c1;
+	border-color: #b03060;
+}
+
+* html body .ie6_ie7 {
+	background-color: #ffb6c1;
+	border-color: #b03060;
+}
+
+/* (4)IE7を含むモダンブラウザにのみ適用（バージョン6以下のIEを除外） */
+html>body .exept_ie6 {
+	background-color: #ffb6c1;
+	border-color: #b03060;
+}
+
+/* (5)IE8を含むモダンブラウザにのみ適用（バージョン7以下のIEを除外） */
+html>/**/body .exept_ie6_ie7 {
+	background-color: #ffb6c1;
+	border-color: #b03060;
+}
+
+/* (6)IE8のみ適用 */
+html>/**/body .ie8 {
+	background-color: #ffb6c1\0/;
+	border-color: #b03060\0/;
+}
+body:not(:target) .ie8 {
+	background-color: #87cefa;
+	border-color: #1e90ff;
+}

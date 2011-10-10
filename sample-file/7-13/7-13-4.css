@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* リンク先のURIについて */
+a[href]:after {
+	content: " (" attr(href)") ";
+}
+
+a[href^="http://www.example.com/"]:after {
+	content: "";
+}
+
+a[href^="http://"]:after {
+	content: " (" attr(href)") "
+}

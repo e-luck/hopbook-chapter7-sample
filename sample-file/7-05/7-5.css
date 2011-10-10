@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Arial, sans-serif;
+}
+
+body {
+	font-size: 100%;
+	font-family: Verdana, Arial, sans-serif;
+	padding: 40px;
+}
+
+/*---- ギャラリー ----*/
+
+/* ギャラリーのキャンバスとなる部分の指定 */
+.gallery {
+	position: relative; /* 絶対配置させる際の基点となる包含ブロックとする指定 */
+	width: 385px; /* サムネール画像と拡大画像を足した幅 */
+	height: 280px; /* サムネール画像を縦に10枚並べた高さ */
+	background: #ccc url(back.png) no-repeat center right;
+}
+
+/* レイヤー階層の指定 */
+.gallery li a img {
+	border: none;
+	position: relative; /* z-index を指定するため */
+	z-index: 3; /* 常に最前面のレイヤーへ表示 */
+	width: 35px; /* 画像をサムネール用に縮小 */
+	height: 28px; /* 画像をサムネール用に縮小 */
+}
+/* レイヤー階層の指定END */
+
+.gallery li {
+	width: 35px;
+	height: 28px;
+	list-style-type: none;
+	background: #ffa905 url(click.png) top left no-repeat; /* マウスオーバーやクリック時に現れる背景画像 */
+	/* IE向けの対応 */
+	line-height: 0;
+	vertical-align: bottom;
+	font-size: 0;
+	/* IE向けの対応END */
+}
+
+.gallery li a {
+	display: block;
+	width: 35px;
+	height: 28px;
+}
+
+.gallery li a:hover {
+	padding-left: 35px; /* 左のサムネール分余白をとる */
+	position: absolute; /* .galleryの左上を原点として絶対配置 */
+	top: 0;
+	left: 0;
+	z-index: 2; /* レイヤー階層をひとつ下に落とす */
+	width: 350px; /* マウスオーバーで画像拡大 */
+	height: 280px; /* マウスオーバーで画像拡大 */
+}
+
+.gallery li a:hover img {
+	width: 350px; /* マウスオーバーで画像拡大 */
+	height: 280px; /* マウスオーバーで画像拡大 */
+}
+
+.gallery li a:active,
+.gallery li a:focus {
+	padding-left: 35px; /* 左のサムネール分余白をとる */
+	position: absolute; /* .galleryの左上を原点として絶対配置 */
+	top: 0;
+	left: 0;
+	width: 350px;
+	height: 280px;
+}
+
+.gallery li a:active img,
+.gallery li a:focus img {
+	position: relative; /* z-index を指定するため */
+	z-index: 1; /* レイヤー階層を更にひとつ下に落とす */
+	width: 350px;
+	height: 280px;
+}
+
+/*---- ギャラリーEND ----*/

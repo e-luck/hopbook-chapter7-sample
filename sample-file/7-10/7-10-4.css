@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;  /* 全ての要素をリセット */
+	padding: 0;  /* 全ての要素をリセット */
+	line-height: 1.6;
+	border: none;
+}
+
+body {
+	font-size: 100%;
+	font-family: Verdana, Arial, sans-serif;
+	padding: 40px;
+}
+
+div {
+	margin-bottom: 1em;
+	padding: 1em;
+	border: 10px solid #666;
+	width: 200px;
+	color: #fff;
+	background: #bbb;
+	font-weight: bold;
+}
+
+.section02 {
+	visibility: hidden;
+}

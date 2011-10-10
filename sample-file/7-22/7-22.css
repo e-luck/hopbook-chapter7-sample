@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/* (1)デフォルトをリセット */
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+
+body {
+	margin: 30px 30px;
+	font-family: 'ヒラギノ角ゴ Pro W3', 'メイリオ', Verdana, Arial, sans-serif;
+}
+
+/* (2)フォームの幅と背景色およびボーダーを指定 */
+form {
+	padding: 1em;
+	border: 10px solid #bbb;
+	width: 32em;
+	background-color: #f9f6f1;
+}
+
+/* (3)paddingを調整してセンタリング */
+fieldset {
+	border: none;
+}
+
+legend {
+	padding-bottom: 1em;
+	font-weight: bold;
+}
+
+/* マックIEから隠す \*/
+legend {
+	padding-left: 11em;
+}
+/* マックIEから隠す終わり */
+
+/* (4)フロートで横並び */
+dt {
+	float: left;
+	width: 9em;
+}
+
+dd {
+	margin-left: 9em;
+	margin-bottom: 1em;
+}
+
+/* (5)入力欄をボーダーでスタイリング */
+input#name,
+input#email,
+textarea {
+	border: 1px solid #666;
+	border-bottom-color: #ccc;
+	border-right-color: #ccc;
+	width: 20em;
+}
+
+p {
+	text-align: center;
+}
+
+/* (6)ボタンをボーダーでスタイリング */
+p input {
+	padding: 0.2em;
+	border: 3px double #666;
+	border-top-color: #bbb;
+	border-left-color: #bbb;
+	background-color: #ededed;
+	font-weight: bold;
+}
+
+/* (7)ボタンが押下されたときのスタイリング */
+p input:active {
+	border: 3px double #bbb;
+	border-top-color: #666;
+	border-left-color: #666;
+}
+
+/* (8)フォーカスされた入力欄をハイライト */
+input:focus,
+textarea:focus {
+	background-color: #fffacd;
+}

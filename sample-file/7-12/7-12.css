@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;  /* 全ての要素をリセット */
+	padding: 0;  /* 全ての要素をリセット */
+	line-height: 1.6;
+	border: none;
+}
+
+body {
+	padding: 40px;
+	font-size: 100%;
+	font-family: Verdana, Arial, sans-serif;
+	background-color: #f3f3f3;
+}
+
+.article {
+	margin: 0 auto;
+	padding: 10px 0;
+	width: 920px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+	margin: 0 20px;
+}
+
+h1, h2, p {
+	margin-bottom: 0.5em;
+	font-size: 100%;
+	color: #555;
+}
+
+h1 {
+	margin: -10px 0 20px;
+	padding-left: 40px;
+	height: 100px;
+	line-height: 100px;
+	background-color: #333;
+	color: #fd357b;
+	font-size: 150%;
+}
+
+/*|+ (1)子孫であるすべてのp要素への指定 +|
+.content p {
+				_background-color: #fffacd;
+}
+
+|+ (2)子要素を対象から外すための指定 +|
+.content * p {
+				_background-color: transparent;
+}*/
+
+/* (3)子供セレクタ対応ブラウザに適用 */
+.content > p { 
+	background-color: #fffacd;
+} 

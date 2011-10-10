@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/* 不要な情報を非表示にする */
+.nav,
+form {
+	display: none;
+}

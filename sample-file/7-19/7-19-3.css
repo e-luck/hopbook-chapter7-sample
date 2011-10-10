@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+* {
+	margin: 0; 
+	padding: 0;
+}
+
+body {
+	font-size: 100%;
+	font-family: Verdana, Arial, sans-serif;
+	padding: 20px;
+}
+
+.menu li {
+	border: 1px solid #ccc;
+	float: left;
+	width: 8em;
+	height: 3em;
+	line-height: 3em;
+	list-style-type: none;
+	background-color: #eee;
+	text-align: center;
+}

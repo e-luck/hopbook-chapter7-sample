@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;  /* 全ての要素をリセット */
+	padding: 0;  /* 全ての要素をリセット */
+	line-height: 1.6;
+	border: none;
+}
+
+body {
+	font-size: 100%;
+	font-family: Verdana, Arial, sans-serif;
+	padding: 40px;
+}
+
+/* (1)アイコンをフロートで横並び */
+.dock li {
+	float: left;
+	list-style :none;
+}
+
+	/* (2)通常時のアイコンのサイズ */
+	.dock li img {
+		width: 64px;
+		height: 64px;
+	}
+	
+		/* (3)マウスオーバー時のアイコンのサイズ */
+		.dock li:hover img {
+				width: 128px;
+				height: 128px;
+		}
+		
+			/* (4)選択されているアイコンの直後のアイコンのサイズ */
+			.dock li:hover + li img {
+					width: 96px;
+					height: 96px;
+			}
+			
+				/* (5)さらに後続のアイコンのサイズ */
+				.dock li:hover + li + li img {
+						width: 80px;
+						height: 80px;
+				}
+
+p {
+clear: left;
+}

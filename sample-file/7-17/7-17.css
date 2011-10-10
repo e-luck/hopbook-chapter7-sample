@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body {
+	font-size: 100%;
+	font-family: Verdana, Arial, sans-serif;
+	padding: 40px;
+	background: url(grid.gif);
+}	
+
+.container {
+	margin-top: -100px;
+	margin-left: -100px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 200px;
+	height: 200px;
+	background-color: #db7093;
+}
+
+p {
+	margin: 10px;
+	color: #fff;
+}

@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body {
+	background: url(img/bg.gif) #f3f3f3;
+}
+
+h1, h2, p {
+	margin-bottom: 0.5em;
+	font-size: 100%;
+	color: #555;
+}
+
+h1 {
+	margin: -10px -40px 20px;
+	padding-left: 40px;
+	height: 100px;
+	line-height: 100px;
+	background-color: #333;
+	color: #fd357b;
+	font-size: 150%;
+}
+
+p {
+	line-height: 1.5;
+}
+
+.article:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+.article {zoom:1;}
+
+.article {
+	margin: 0 auto;
+	padding: 10px 40px;
+	width: 880px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.about {
+	width: 680px;
+	float: right;
+}
+
+.files {
+	width: 200px;
+	float: left;
+}
+
+.dl_list li {
+	margin-bottom: 1em;
+	padding-left: 30px;
+	height: 24px;
+	list-style: none;
+}
+
+.dl_list a {
+	color: #358efd;
+	text-decoration: none;
+	vertical-align: top;
+}
+
+.dl_list a:hover {
+	text-decoration: underline;
+}
+
+.dl_word {
+	background: url(img/ico_word.png) 0 0 no-repeat;
+}
+
+.dl_excel {
+	background: url(img/ico_excel.png) 0 0 no-repeat;
+}
+
+.dl_ppt {
+	background: url(img/ico_ppt.png) 0 0 no-repeat;
+}
+
+.dl_pdf {
+	background: url(img/ico_pdf.png) 0 0 no-repeat;
+}
+
+.dl_psd {
+	background: url(img/ico_ps.png) 0 0 no-repeat;
+}
+
+.dl_ai {
+	background: url(img/ico_ai.png) 0 0 no-repeat;
+}
+
+.dl_html {
+	background: url(img/ico_dw.png) 0 0 no-repeat;
+}
+
+.dl_fl {
+	background: url(img/ico_fla.png) 0 0 no-repeat;
+}

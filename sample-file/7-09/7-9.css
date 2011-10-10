@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;  /* 全ての要素をリセット */
+	padding: 0;  /* 全ての要素をリセット */
+	line-height: 1.6;
+	border: none;
+}
+
+body {
+	padding: 40px;
+	font-size: 100%;
+	font-family: Verdana, Arial, sans-serif;
+	background-color: #f3f3f3;
+}
+
+.article {
+	margin: 0 auto;
+	padding: 10px 0;
+	width: 920px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.about {
+	padding: 0 20px;
+}
+
+h1, h2, p {
+	margin-bottom: 0.5em;
+	font-size: 100%;
+	color: #555;
+}
+
+h1 {
+	margin: -10px 0 20px;
+	padding-left: 40px;
+	height: 100px;
+	line-height: 100px;
+	background-color: #333;
+	color: #fd357b;
+	font-size: 150%;
+}
+
+ul {
+	margin: 40px 0;
+}
+
+.button li {
+	line-height: 30px;
+	list-style-type: none;
+	text-align: center;
+}
+
+/* (1)a要素のブロック化 */
+.button li a {
+	margin: 0 auto;
+	display: block;
+	width: 520px;
+	height: 30px;
+	line-height: 30px;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 0 1px 0 #555;
+}
+
+/* (2)背景画像の指定 */
+.button li a {
+	background: url(normal_hover.png) 0 0 no-repeat;
+}
+
+/* (3)ひとつの画像を使って、:hover時に背景画像をずらす */
+.button li a:hover {
+	background: url(normal_hover.png) 0 -30px no-repeat;
+}

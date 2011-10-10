@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="7-22.css">
+<title>CSSでフォームの部品をスタイリングのサンプル</title>
+</head>
+
+<body>
+
+<form action="#" method="post">
+	<fieldset>
+	<legend>お問い合わせフォーム</legend>
+		<dl>
+			<dt><label for="name">お名前</label></dt>
+				<dd><input type="text" id="name" name="your-name" size="40" tabindex="1" /></dd>
+			<dt><label for="email">メールアドレス</label></dt>
+				<dd><input type="text" id="email" name="your-email" size="40" tabindex="2" /></dd>
+			<dt><label for="text">お問い合わせ内容</label></dt>
+				<dd><textarea id="text" name="your-text" rows="5" cols="40" tabindex="3" >お問い合わせ内容を記入してください。</textarea></dd>
+		</dl>
+		<p><input type="submit" value="送信する" tabindex="4" /></p>
+	</fieldset>
+</form>
+
+</body>
+</html>

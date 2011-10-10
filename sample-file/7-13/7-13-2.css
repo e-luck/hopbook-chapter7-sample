@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/* フォントの指定 */
+h1,h2,h3,h4,h5,h6 {
+	font-family: "ＭＳ Ｐゴシック", "ヒラギノ角ゴPro W3", Osaka, sansserif;
+}
+
+p {
+	font-family: "ＭＳ Ｐ明朝", 細明朝体, "Ryumin Light-KL", "ヒラギノ明朝Pro W3", serif;
+}

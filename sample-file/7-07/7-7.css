@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+body {
+	font-size: 100%;
+	font-family: sans-serif;
+	padding: 40px;
+	background: #8b8378; 
+}
+
+.section {
+	margin-bottom: 40px;
+	padding: 10px 20px;
+	width: 600px;
+	background: #fffaf0; 
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+h1 {
+	margin: 0 0 10px 0;
+	font-size: 120%;
+	font-weight: normal;
+}
+
+p {
+	margin-top: -105px;
+	margin-left: 150px;
+	width: 440px;
+	color: #555;
+}
+
+img {
+	border: none;
+}
+
+/* (1)包含ブロックに設定 */
+.photo {
+	position: relative;
+/*  top: 0;
+	left: 0;
+	width: 100px;*/
+}
+
+/* (2)a要素をブロック化 */
+.photo a.popup,
+.photo a.popup:visited {
+	display: block;
+	width: 140px;
+}
+
+/* (3)拡大画像を非表示（IE6以外） */
+.photo a.popup .large {
+	display: none;
+}
+
+/* (3)拡大画像を非表示（IE6用） */
+* html body .photo a.popup .large {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 1px;
+}	
+
+/* (4)IE向けの対応 */
+.photo a.popup:hover {
+	background-color: #fff;
+}
+
+/* (5)マウスオーバー時に拡大画像の表示 */
+.photo a.popup:hover .large {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 350px;
+	height: 250px;
+	z-index: 1;
+}

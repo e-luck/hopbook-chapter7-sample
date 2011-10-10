@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+* {
+	margin: 0; 
+	padding: 0;
+}
+
+body {
+	margin: 30px 30px;
+	font-size: 100%;
+	font-family: Verdana, Arial, sans-serif;
+	text-aling: center;
+}
+
+div#container {
+	width: 760px;
+	margin: 0 auto;
+}
+
+/* (1)第一階層のリストをフロートで横並びに */
+.menu li {
+	float: left;
+	list-style-type: none;
+	background-color: #eee;
+	text-align: center;
+}
+
+/* (2)第二階層以下のリストのフロートを解除 */
+.menu ul li {
+	clear: left;
+}
+
+/* (3)a要素をブロック化 */
+.menu li a {
+	display: block;
+	width: 8em;
+	height: 2em;
+	line-height: 2em;
+	text-decoration: none;
+}
+
+.menu a:hover {
+	background-color: #cf7;
+}
+
+/* (4)第二階層以下を非表示 */
+.menu ul {
+	display: none;
+}
+
+/* (5)マウスオーバーしたli要素の直接の子要素のみを表示 */
+.menu li:hover > ul {
+	display: block;
+	position: absolute;
+}
+
+/* (6)サブメニューの位置を調整 */
+.menu ul ul{
+	margin-top: -2em;
+	margin-left: 8em;
+}

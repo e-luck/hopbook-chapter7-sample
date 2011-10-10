@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 40px;
+	font-size: 100%;
+	font-family: Verdana, Arial, sans-serif;
+	background-color: #f3f3f3;
+}
+
+h1, h2, p {
+	margin-bottom: 0.5em;
+	font-size: 100%;
+	color: #555;
+}
+
+h1 {
+	margin: -10px 0 20px;
+	padding-left: 40px;
+	height: 100px;
+	line-height: 100px;
+	background-color: #333;
+	color: #fd357b;
+	font-size: 150%;
+}
+
+.nav h2 {
+	display: none;
+}
+
+p {
+	line-height: 1.5;
+}
+
+.article:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+.article {zoom:1;}
+
+.article {
+	margin: 0 auto;
+	padding: 10px 0;
+	width: 920px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.about {
+	padding-right: 20px;
+	width: 700px;
+	float: right;
+}
+
+.nav {
+	width: 200px;
+	float: left;
+	margin-top: -20px;
+}
+
+/* ----------------------*/
+/* (1)包含ブロックに設定 */
+ul {
+	position: relative;
+	width: 10em;
+	height: 18em;
+	background-color: #aaa;
+	list-style-type: none;
+}
+
+/* (2)上下の区切り線を付ける */
+li {
+	border-top: 1px solid #777;
+	border-bottom: 1px solid #333;
+	background-color: #555;
+}
+
+/* (3)a要素をブロック化 */
+li a {
+	padding-left: 40px;
+	display: block;
+	border-left: 5px solid #555;
+	line-height: 2em;
+	text-decoration: none;
+	color: #fff;
+}
+
+/* (4)アイコンを非表示 */
+li a img {
+	display: none;
+	border: none;
+}
+
+li a:hover {
+	background-color: #666;
+	border-left: 5px solid #fd357b;
+	color: #fbafca;
+}
+
+/* (5)マウスオーバー時にアイコン表示 */
+li a:hover img {
+	display: block;
+	position: absolute;
+	top: 9em;
+	left: 15px;
+}

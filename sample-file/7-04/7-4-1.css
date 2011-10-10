@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+dl {
+	counter-reset: item;
+}
+
+dt:before {
+	content: counter(item) ". ";
+	counter-increment: item;
+}

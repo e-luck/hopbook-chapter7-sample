@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+	margin: 30px 30px;
+	font-family: 'ヒラギノ角ゴ Pro W3', 'メイリオ', Verdana, Arial, sans-serif;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	margin-bottom: 1em;
+}
+
+/* リンク先の拡張子によってアイコン表示 */
+a[href$=".pdf"] { 
+	padding-right: 20px;
+	background: transparent url(pdf_icon.gif) center right no-repeat;
+}
+
+/* リンク先がメールアドレスであることを表す */
+a[href^="mailto:"] {
+	padding-right: 20px;
+	background: transparent url(mail_icon.gif) center right no-repeat;
+}
+
+/* リンク先が別ウィンドウで開かれることをアイコン表示 */
+a[target="_blank"] {
+	padding-right: 20px;
+	background: transparent url(window_double.gif) center right no-repeat;
+}

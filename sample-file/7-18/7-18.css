@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+	font-size: 100%;
+	font-family: Verdana, Arial, sans-serif;
+	background-color: #fdf5e6;
+}
+
+h1 {
+	margin-left: 20px;
+	color: #fd357b;
+	line-height: 80px;
+}
+
+p {
+	margin: 0 20px;
+	padding-bottom: 1em;
+}
+
+.footer p {
+	color: #fdf5e6;
+	line-height: 50px;
+	padding-bottom: 0;
+}
+
+/* (1)内容量にかかわらず、常に高さ100% */
+html,
+body {
+	height: 100%;
+}
+
+/* (2)包含ブロックに設定 */
+.container {
+	position: relative;
+	min-height: 100%;
+}
+
+/* (3)フッタの高さと同値 */
+.contents {
+	padding-bottom: 50px;
+}
+
+.header {
+	margin-bottom: 20px;
+	height: 80px;
+	background-color: #333;
+}
+
+/* (4)下部に絶対配置 */
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background: #333;
+}
